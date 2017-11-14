@@ -1674,11 +1674,8 @@
         };
         onLoaderError.displayName = 'onLoaderError';
         console.log('runned');
-        setTimeout(() => {
-          console.log('setTimeout ! ! ! ! ! ! ! ! ! ! !');
         $injector.get($loaderFactory)(loaderOptions)
           .then(onLoaderSuccess, onLoaderError);
-      },5000);
 
         return deferred.promise;
       };
